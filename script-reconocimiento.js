@@ -289,7 +289,7 @@ async function capturarYReconocer() {
         formData.append("imagen", blob, "captura.jpg");
 
         try {
-          const response = await fetch("https://face-app-production.up.railway.app/reconocer", {
+          const response = await fetch("https://appmovil-production.up.railway.app/reconocer", {
             method: "POST",
             body: formData,
           });
@@ -410,7 +410,7 @@ async function reconocerImagen() {
 
     showLoading("Analizando imagen...");
 
-    const response = await fetch("https://face-app-production.up.railway.app/reconocer", {
+    const response = await fetch("https://appmovil-production.up.railway.app/reconocer", {
       method: "POST",
       body: formData,
     });
